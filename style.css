@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
 
 html, body {
 	
@@ -9,8 +11,46 @@ html, body {
   
   }
 
+  
+   /* Navigation Bar */
+  
+  
+  #nav {
+    width: 100%;
+	height: 70px;
+	background-color: rgba(204,204,204,0.5);
+	text-align: center;
+	position: fixed;
+	z-index: 10;
 	
-  .intro {
+  }
+  
+  #nav ul li {
+	list-style: none;
+	display: inline-block;
+	color: #fff;
+	}
+
+  #nav li a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
+	display: block;
+	padding: 7px 35px;
+	transition: .7s;
+	}
+
+  #nav li a:hover{
+	background: #000;
+	color: #D4AF37;
+	opacity: 0.5;
+	}
+ 
+ 
+ /* Hero Headers */
+ 
+
+ .intro {
 	height: 100%;
 	width: 100%;
 	margin: auto;	
@@ -52,32 +92,203 @@ html, body {
 	font-weight: 480;
     padding: 0;
     margin: 45px;
-    margin-bottom: 140px;
+    margin-bottom: 80px;
 	 
  }
-	 
-	@media screen and (max-width:760px) {
-		.headers h1 {
-			font size: 150%;
-		}
-		
-		.headers h2 {
-			font size: 80%;
-		}
-		
-		p {
-			font-size: 100%;
-			line-height: 160%;
-		}
-	}
  
+ /* Social Media Headers */
+ 
+ .footer-social-icons {
+    
+	width: 350px;
+    display:block;
+    margin: 0 auto;
  
  }
-  
-  
-  
 
+ .social-icon {
+ 
+    color: #fff;
+ 
+ }
+
+ ul.social-icons {
+    
+	margin-top: 10px;
+ 
+ }
+
+ .social-icons li {
+    
+	vertical-align: top;
+    display: inline;
+    height: 100px;
+ }
+
+ .social-icons a {
+   
+    color: #fff;
+    text-decoration: none;
+    font-size: 40px;
+    margin: 0 10px;
+
+}
+
+ .fa-facebook {
+    
+	padding:10px 16px;
+    -o-transition:.7s;
+    -ms-transition:.7s;
+    -moz-transition:.7s;
+    -webkit-transition:.7s;
+    transition: .7s;
+    background-color: rgba(50,47,48,0.5);
+
+ }
+
+ .fa-facebook:hover {
+    
+	background-color: #3d5b99;
+	box-shadow: 0 0 2.5vmin rgba(0, 0, 0, 1.8);
+ 
+ } 
+
+ .fa-github {
+ 
+    padding:10px 14px;
+    -o-transition: 0.7s;
+    -ms-transition: 0.7s;
+    -moz-transition: 0.7s;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+    background-color: rgba(50,47,48,0.5);
+
+ }
+
+ .fa-github:hover {
+
+    background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+	box-shadow: 0 0 2.5vmin rgba(0, 0, 0, 1.8);
+	@include transition(background 250ms ease-in);
+ 
+ }
+
+ .fa-linkedin {
+    
+	padding:10px 14px;
+    -o-transition:.7s;
+    -ms-transition:.7s;
+    -moz-transition:.7s;
+    -webkit-transition:.7s;
+    transition: .7s;
+    background-color: rgba(50,47,48,0.5);
+ 
+ }
+
+ .fa-linkedin:hover {
+ 
+    background-color: #0073a4;
+	box-shadow: 0 0 2.5vmin rgba(0, 0, 0, 1.8);
+ 
+ }
+
+ .fa-envelope {
+ 
+     padding:10px 14px;
+    -o-transition:.7s;
+    -ms-transition:.7s;
+    -moz-transition:.7s;
+    -webkit-transition:.7s;
+    transition: .7s;
+    background-color: rgba(50,47,48,0.5);
+
+ }
+
+ .fa-envelope:hover {
+ 
+    background-color: #D4AF37;
+	box-shadow: 0 0 2.5vmin rgba(0, 0, 0, 1.8);
+ 
+ }
+
+ *, *:before, *:after {
+ 
+  padding: 0;
+  box-sizing: border-box;
+ 
+ }
+
+ .clearfix:after {
+ 
+  content: "";
+  display: table;
+  clear: both;
+
+  }
+ 
   
-  
-  
+	 
+/*---------------------------------------------------------
+  M E D I A   Q U E R I E S
+----------------------------------------------------------- */
+
+		@media only screen and (max-width: 768px) {
+
+		  .hamburger {
+			cursor: pointer;
+			padding: 30px;
+			display: block;
+		  }
+
+		  .line {
+			border-bottom: 5px solid #fff;
+			width: 35px;
+			margin: auto;
+			margin-bottom: 6px;
+		  }
+		  
+		  .line:last-child {
+			margin-bottom: 0;
+		  }
+
+		  .headers h1 {
+			font-size: 320%;
+		}
+
+		  .subheading {
+			font-size: 30px;
+		}
+
+
+		/* Our styles here */
+		#nav li {
+			width: 100%;
+			border-bottom: 1px solid white;
+			text-align: center;
+			border-top: 1px solid white;         
+			border-bottom: none;
+			background: rgba(204, 204, 204, 1);
+		}
+
+		.menu {
+			height: 0;
+			overflow: hidden;
+			transition: height 0.3s;
+			margin: 0;
+			padding: 0;
+			margin-top:-14;
+		}
+
+		.open {
+			height: 255;
+		}
+
+		}	
+		  
+		  
+		  
+
+		  
+		  
+		  
 	
