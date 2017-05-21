@@ -96,7 +96,9 @@ html, body {
     margin-bottom: 100px;
 	 
  }
+
  
+  
  /* Social Media Headers */
  
  .footer-social-icons {
@@ -169,7 +171,7 @@ html, body {
 
  .fa-github:hover {
 
-    background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+	background-color:#4078c0;
 	box-shadow: 0 0 2.5vmin rgba(0, 0, 0, 1.8);
 	@include transition(background 250ms ease-in);
  
@@ -229,8 +231,9 @@ html, body {
 
   }
  
-  
-	 
+
+
+   
 /*---------------------------------------------------------
   M E D I A   Q U E R I E S
 ----------------------------------------------------------- */
@@ -264,6 +267,7 @@ html, body {
 
 
 		/* Our styles here */
+		
 		#nav li {
 			width: 100%;
 			border-bottom: 1px solid white;
